@@ -147,7 +147,8 @@ class TestUvProject(unittest.TestCase):
 
         self.assertIn(".public_export:", ci_config)
         self.assertIn("public_pre_commit:", ci_config)
-        self.assertEqual(ci_config.count("extends: .public_export"), 2)
+        self.assertIn("public_docs_linkcheck:", ci_config)
+        self.assertEqual(ci_config.count("extends: .public_export"), 3)
         self.assertEqual(ci_config.count("pre-commit run --all-files"), 2)
         self.assertIn("git init", ci_config)
         self.assertIn("git add -f -A", ci_config)

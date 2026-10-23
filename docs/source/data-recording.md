@@ -79,7 +79,7 @@ jupyter notebook scripts/data_recording/inspect_data.ipynb
 
 ## Step 2: Convert to GR00T Format
 
-Convert the HDF5 dataset to [LeRobot-compatible format](https://github.com/NVIDIA/Isaac-GR00T/blob/main/getting_started/LeRobot_compatible_data_schema.md) for GR00T training:
+Convert the HDF5 dataset to [LeRobot-compatible format](https://github.com/NVIDIA/Isaac-GR00T/blob/main/getting_started/data_preparation.md) for GR00T training:
 
 ```bash
 python scripts/data_recording/convert_to_gr00t.py \

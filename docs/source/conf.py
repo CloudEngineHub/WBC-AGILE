@@ -30,6 +30,11 @@ myst_enable_extensions = [
     "tasklist",
 ]
 
+# -- Options for the link check (scripts/ci/check_docs_links.sh) --------------
+
+linkcheck_timeout = 30
+linkcheck_retries = 3
+
 # -- Options for HTML output -------------------------------------------------
 
 html_theme = "nvidia_sphinx_theme"

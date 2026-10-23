@@ -36,6 +36,23 @@ jobs:
       - name: Run pre-commit
         run: pre-commit run --all-files --show-diff-on-failure
   ## ------------------------------------------
+  ## Documentation link check
+  ## ------------------------------------------
+  docs_linkcheck:
+    name: docs link check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install uv
+        run: pip install uv
+      - name: Check documentation links
+        run: bash scripts/ci/check_docs_links.sh
+  ## ------------------------------------------
   ## DCO sign-off check
   ## ------------------------------------------
   dco_check:

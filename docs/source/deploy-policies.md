@@ -6,13 +6,13 @@ To deploy policies sim-to-sim and sim-to-real this project uses LEAPP and Isaac 
 
 LEAPP packages a policy into a self-contained artifact, a LEAPP bundle, which can then be executed by a LEAPP runtime.
 
-[Isaac ROS Deploy](https://isaac.gitlab-master-pages.nvidia.com/isaac/repositories_and_packages/isaac_ros_deploy/index.html)
+[Isaac ROS Deploy](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_deploy/index.html)
 provides LEAPP runtimes for real robots and simulation-in-the-loop deployment.
 The runtimes execute policies through C++, providing deterministic,
 low-latency deployment without requiring policy code changes.
 
 For a complete Unitree G1 runtime walkthrough, see the
-[Isaac ROS AGILE G1 deployment tutorial](https://isaac.gitlab-master-pages.nvidia.com/isaac/repositories_and_packages/isaac_ros_deploy/tutorials/deploy_agile.html).
+[Isaac ROS AGILE G1 deployment tutorial](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_deploy/tutorials/deploy_agile.html).
 
 ## Export a Policy with LEAPP
 
